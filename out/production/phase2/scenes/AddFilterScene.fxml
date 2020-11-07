@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.5" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.AddFilterController">
+    <children>
+        <Label layoutX="19.0" layoutY="6.0" prefHeight="38.0" prefWidth="113.0" text="Filters">
+            <font>
+                <Font name="System Bold" size="26.0"/>
+            </font>
+        </Label>
+        <VBox layoutX="15.0" layoutY="52.0" prefHeight="423.0" prefWidth="148.0" spacing="18.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#originalButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Original">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#embossButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Emboss">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#stampButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Stamp">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#equalizeButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Equalize">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#pointillizeButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Pointillize">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#sparkleButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Sparkle">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#marbleButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Marble">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#javaLnFButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="JavaLnF">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#oilButtonClicked" prefHeight="27.0" prefWidth="135.0"
+                        text="Oil">
+                    <font>
+                        <Font name="System Bold Italic" size="13.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <ImageView fx:id="imageView" fitHeight="403.0" fitWidth="612.0" layoutX="169.0" layoutY="18.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <HBox layoutX="190.0" layoutY="439.0" prefHeight="36.0" prefWidth="581.0" spacing="35.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="36.0" prefWidth="286.0"
+                        style="-fx-background-radius: 20;" text="Save Change">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="goBack" mnemonicParsing="false" onAction="#goBackButtonClicked" prefHeight="36.0"
+                        prefWidth="286.0" style="-fx-background-radius: 20;" text="Go Back">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

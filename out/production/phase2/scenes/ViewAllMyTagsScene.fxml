@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.5" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.ViewAllMyTagsController">
+    <children>
+        <HBox layoutX="8.0" layoutY="438.0" prefHeight="44.0" prefWidth="763.0" spacing="22.0">
+            <children>
+                <TextField fx:id="newTag" prefHeight="43.0" prefWidth="401.0" promptText="Add a new tag">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="44.0" prefWidth="110.0"
+                        text="Add">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="44.0" prefWidth="110.0"
+                        text="Delete">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="goBack" mnemonicParsing="false" onAction="#goBackButtonClicked" prefHeight="44.0"
+                        prefWidth="100.0" style="-fx-background-radius: 20;" text="Go Back">
+                    <font>
+                        <Font size="15.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <TableView fx:id="table" layoutX="5.0" layoutY="4.0" prefHeight="420.0" prefWidth="790.0">
+            <columns>
+                <TableColumn fx:id="tagColumn" prefWidth="788.9999856948853" text="All The Existing Tags"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

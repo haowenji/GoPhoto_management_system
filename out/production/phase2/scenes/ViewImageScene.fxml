@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.5" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.ViewImageController">
+    <children>
+        <ImageView fitHeight="494.5" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../ViewImageSceneBGP.jpeg"/>
+            </image>
+        </ImageView>
+        <VBox layoutX="232.0" layoutY="160.0" prefHeight="200.0" prefWidth="343.0" spacing="50.0">
+            <children>
+                <Button fx:id="listAll" mnemonicParsing="false" onAction="#listAllButtonClicked" prefHeight="60.0"
+                        prefWidth="347.0" text="All Images Under This Directory" textFill="#1ab046">
+                    <font>
+                        <Font name="System Italic" size="19.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="localOnly" mnemonicParsing="false" onAction="#localOnlyButtonClicked" prefHeight="60.0"
+                        prefWidth="354.0" text="Images In This Directory Only" textFill="#da340f">
+                    <font>
+                        <Font name="System Italic" size="19.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

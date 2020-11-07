@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.5" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.MainSceneController">
+    <children>
+        <ImageView fitHeight="494.5" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../MainSceneBGP.jpeg"/>
+            </image>
+        </ImageView>
+        <VBox layoutX="249.0" layoutY="134.0" prefHeight="289.0" prefWidth="308.0" spacing="30.0">
+            <children>
+                <Button fx:id="viewImage" mnemonicParsing="false" onAction="#viewImageButtonClicked" prefHeight="60.0"
+                        prefWidth="350.0" text="Select A Directory (View Images)" textAlignment="CENTER"
+                        textFill="#1202e3">
+                    <font>
+                        <Font name="System Italic" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="viewTags" mnemonicParsing="false" onAction="#ViewMyTagsButtonClicked" prefHeight="60.0"
+                        prefWidth="331.0" text="View All My Tags" textFill="#660deb">
+                    <font>
+                        <Font name="System Italic" size="19.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="logBook" mnemonicParsing="false" onAction="#logBookButtonClicked" prefHeight="60.0"
+                        prefWidth="350.0" text="Logbook" textFill="#ab1cd6">
+                    <font>
+                        <Font name="System Italic" size="20.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

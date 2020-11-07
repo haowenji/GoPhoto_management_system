@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.5" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.LocalOnlyController">
+    <children>
+        <Button fx:id="goBackButton" layoutX="19.0" layoutY="459.0" mnemonicParsing="false"
+                onAction="#goBackButtonClicked" prefHeight="25.0" prefWidth="80.0" text="Go Back"/>
+        <Label layoutX="14.0" layoutY="6.0" text="Only The Images In The Directory" textFill="#a110ae">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="table" layoutX="14.0" layoutY="29.0" prefHeight="417.0" prefWidth="785.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="282.8624258041382" text="Name"/>
+                <TableColumn fx:id="pathColumn" prefWidth="485.1375732421875" text="Path"/>
+            </columns>
+        </TableView>
+        <HBox layoutX="623.0" layoutY="453.0" prefHeight="31.0" prefWidth="186.0" spacing="20.0">
+            <children>
+                <Button fx:id="chooseButton" mnemonicParsing="false" onAction="#chooseButtonClicked" prefHeight="31.0"
+                        prefWidth="171.0" text="Choose">
+                    <font>
+                        <Font name="System Italic" size="15.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

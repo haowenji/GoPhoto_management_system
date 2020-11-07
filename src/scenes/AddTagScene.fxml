@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.5" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="gui.AddTagController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="368.0" fitWidth="564.0" layoutX="17.0" layoutY="48.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <HBox layoutX="21.0" layoutY="437.0" prefHeight="39.0" prefWidth="561.0" spacing="20.0">
+            <children>
+                <Button fx:id="viewHistory" mnemonicParsing="false" onAction="#viewHistoryButtonClicked"
+                        prefHeight="84.0" prefWidth="167.0" text="View Renaming History">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="moveImage" mnemonicParsing="false" onAction="#moveTheImageButtonClicked"
+                        prefHeight="60.0" prefWidth="184.0" text="Move the Image">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="addFilter" mnemonicParsing="false" onAction="#addFilterButtonClicked" prefHeight="62.0"
+                        prefWidth="184.0" text="Add A Filter">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <VBox layoutX="599.0" layoutY="16.0" prefHeight="397.0" prefWidth="191.0" spacing="15.0">
+            <children>
+                <TableView fx:id="table2" prefHeight="159.0" prefWidth="191.0">
+                    <columns>
+                        <TableColumn fx:id="tagColumn2" prefWidth="190.0" text="Tags With This Imags"/>
+                    </columns>
+                </TableView>
+                <Button mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="27.0" prefWidth="315.0"
+                        text="Delete"/>
+                <TableView fx:id="table1" prefHeight="159.0" prefWidth="191.0">
+                    <columns>
+                        <TableColumn fx:id="tagColumn1" prefWidth="190.0" text="All The Existing Tags"/>
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <Button layoutX="730.0" layoutY="401.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="35.0"
+                prefWidth="61.0" text="Add"/>
+        <TextField fx:id="newTag" layoutX="600.0" layoutY="402.0" prefHeight="35.0" prefWidth="118.0"
+                   promptText="Create a new tag">
+            <font>
+                <Font size="12.0"/>
+            </font>
+        </TextField>
+        <Button fx:id="goBack" layoutX="695.0" layoutY="444.0" mnemonicParsing="false" onAction="#goBackButtonClicked"
+                prefHeight="35.0" prefWidth="94.0" style="-fx-background-radius: 40;" text="Go Back">
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+        </Button>
+        <Text fx:id="text" layoutX="11.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"
+              wrappingWidth="576.1671977043152">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
